@@ -37,3 +37,139 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+body {
+    color: white;
+    text-shadow: 0.5px 0.5px darkgray;
+}
+
+.recept {
+    padding: 0.5rem;
+    margin-bottom:0.1rem;
+    min-height: 90px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jedna {
+    background-image: url('images/salat.jpg');
+    min-height:200px;
+}
+
+.dva {
+    background-image: url('images/chlebicek.jpg');
+}
+
+.tri {
+    background-image: url('images/cizrna.jpg');
+}
+
+.ctyri {
+    background-image: url('images/tacos.jpg');
+}
+
+.pet {
+    background-image: url('images/burger.jpg');
+}
+
+.nazev1 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size:1.75rem;
+    display:flex;
+    order:2;
+}
+
+.nazev {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 1.5rem;
+    display:flex;
+    order:2;
+}
+
+.detaily {
+    font-family: 'Source Sans Pro';
+    font-size:0.8rem;
+    font-weight:400;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 480px) {
+    .recept{
+        padding: 1.25rem;
+        min-height:150px;
+        width:50%;
+    }
+
+    .jedna {
+        min-height:250px;
+        width:auto;
+    }
+
+    .nazev1 {
+        font-size:2rem;
+    }
+
+    .nazev{
+        font-size:1.5rem;
+    }
+
+    .dvojce{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .dva{
+        order:1;
+    }
+
+    .tri{
+        order:3;
+    }
+
+    .ctyri{
+        order:2;
+        border-left:0.1rem solid;
+    }
+
+    .pet{
+        order:4;
+        border-left:0.1rem solid;
+    }
+}
+
+
+@media (min-width: 860px) {
+    .recept{
+        min-height:200px;
+    }
+
+    .jedna{
+        min-height:400px;
+        max-width:33.3333%;
+        border-right:0.1rem solid;
+    }
+
+    .dvojce{
+        max-width:66.6666%;
+    }
+    
+    .nazev1{
+        font-size:3rem;
+    }
+
+    .nazev{
+        font-size:1.75rem;
+    }
+
+    .recepty{
+        display:flex;
+    }
+}
